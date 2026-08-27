@@ -99,18 +99,15 @@ const handleScroll = () => {
 
 const toggleTheme = () => {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
-  document.documentElement.setAttribute('data-theme', theme.value)
+  document.documentElement.classList.toggle('dark', theme.value === 'dark')
   localStorage.setItem('theme', theme.value)
 }
 
 const loadTheme = () => {
   const saved = localStorage.getItem('theme')
-  if (saved) {
-    theme.value = saved
-    document.documentElement.setAttribute('data-theme', saved)
-  } else {
-    document.documentElement.setAttribute('data-theme', 'light')
-  }
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  theme.value = saved ?? (prefersDark ? 'dark' : 'light')
+  document.documentElement.classList.toggle('dark', theme.value === 'dark')
 }
 
 const isActive = (href) => {
