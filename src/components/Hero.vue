@@ -69,7 +69,7 @@
 import { ArrowDown, Mouse, Github, Linkedin, Twitter, Mail } from 'lucide-vue-next'
 
 const socials = [
-  { name: 'GitHub', url: 'https://github.com/mypsyad', icon: Github },
+  { name: 'GitHub', url: 'https://github.com/mypsyad-dev', icon: Github },
   { name: 'LinkedIn', url: 'https://linkedin.com/in/psychesafe', icon: Linkedin },
   { name: 'Email', url: 'mailto:safepsyche@gmail.com', icon: Mail },
 ]

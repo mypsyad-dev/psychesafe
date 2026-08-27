@@ -138,9 +138,9 @@ import emailjs from '@emailjs/browser'
 import { Mail, Phone, MapPin, Github, Linkedin, Twitter, Send } from 'lucide-vue-next'
 
 const socials = [
-  { name: 'GitHub', url: 'https://github.com', icon: Github },
-  { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin },
-  { name: 'Twitter', url: 'https://twitter.com', icon: Twitter },
+  { name: 'GitHub', url: 'https://github.com/mypsyad-dev', icon: Github },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/psychesafe', icon: Linkedin },
+  // { name: 'Twitter', url: 'https://twitter.com', icon: Twitter },
 ]
 
 const form = reactive({

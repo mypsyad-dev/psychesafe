@@ -42,7 +42,7 @@
     </div>
 
     <div class="container-wide pb-6">
-      <div class="border-t border-border pt-6 mt-8 text-center text-xs text-muted-foreground">
+      <div class="border-t border-border pt-6 text-center text-xs text-muted-foreground">
         © {{ new Date().getFullYear() }} Psyche Safe. All rights reserved.
       </div>
     </div>
@@ -62,9 +62,9 @@ const footerLinks = [
 ]
 
 const socials = [
-  { name: 'GitHub', url: 'https://github.com', icon: Github },
-  { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin },
-  { name: 'Twitter', url: 'https://twitter.com', icon: Twitter },
+  { name: 'GitHub', url: 'https://github.com/mypsyad-dev', icon: Github },
+  { name: 'LinkedIn', url: 'https://linkedin.com/in/psychesafe', icon: Linkedin },
+  // { name: 'Twitter', url: 'https://twitter.com', icon: Twitter },
 ]
 </script>
 
