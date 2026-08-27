@@ -40,8 +40,10 @@
       </div>
     </div>
 
-    <div class="border-t border-border pt-6 mt-8 text-center text-xs text-muted-foreground">
-      © {{ new Date().getFullYear() }} Psyche Safe. All rights reserved.
+    <div class="container-wide pb-6">
+      <div class="border-t border-border pt-6 mt-8 text-center text-xs text-muted-foreground">
+        © {{ new Date().getFullYear() }} Psyche Safe. All rights reserved.
+      </div>
     </div>
   </footer>
 </template>
