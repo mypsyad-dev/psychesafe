@@ -159,10 +159,9 @@ const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 const isConfigured = Boolean(
-  SERVICE_ID && TEMPLATE_ID && CONTACT_TEMPLATE_ID && PUBLIC_KEY &&
+  SERVICE_ID && TEMPLATE_ID && PUBLIC_KEY &&
   !SERVICE_ID.includes('your_') &&
-  !TEMPLATE_ID.includes('your_') &&
-  !CONTACT_TEMPLATE_ID.includes('your_')
+  !TEMPLATE_ID.includes('your_')
 )
 
 const handleSubmit = async () => {
@@ -197,13 +196,6 @@ const handleSubmit = async () => {
   const autoReplyPayload = {
     ...basePayload,
     to_email: form.email,
-  }
-
-  // 2) Contact-us template — sends the inquiry to you.
-  //    Template's "To Email" field should be safepsyche@gmail.com.
-  const inquiryPayload = {
-    ...basePayload,
-    to_email: 'safepsyche@gmail.com',
   }
 
   try {
