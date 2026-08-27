@@ -89,9 +89,9 @@ cp .env.example .env
 
 Edit `.env` and replace the placeholder values:
 ```
-VITE_EMAILJS_SERVICE_ID=service_abc123
-VITE_EMAILJS_TEMPLATE_ID=template_xyz789
-VITE_EMAILJS_PUBLIC_KEY=aBcDeFgHiJkLmNoPq
+VITE_EMAILJS_SERVICE_ID=
+VITE_EMAILJS_TEMPLATE_ID=
+VITE_EMAILJS_PUBLIC_KEY=
 ```
 
 ### 6. Restart the dev server

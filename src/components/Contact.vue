@@ -156,7 +156,6 @@ const submitStatus = ref(null)
 // Read EmailJS credentials from environment variables
 const SERVICE_ID = import.meta.env.VITE_EMAILJS_SERVICE_ID
 const TEMPLATE_ID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-const CONTACT_TEMPLATE_ID = import.meta.env.VITE_EMAILJS_CONTACT_TEMPLATE_ID
 const PUBLIC_KEY = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 const isConfigured = Boolean(
@@ -211,8 +210,7 @@ const handleSubmit = async () => {
     // Send both in parallel so the visitor doesn't wait twice as long.
     // If either fails, Promise.all rejects and we surface the error.
     await Promise.all([
-      emailjs.send(SERVICE_ID, TEMPLATE_ID, autoReplyPayload, { publicKey: PUBLIC_KEY }),
-      emailjs.send(SERVICE_ID, CONTACT_TEMPLATE_ID, inquiryPayload, { publicKey: PUBLIC_KEY }),
+      emailjs.send(SERVICE_ID, TEMPLATE_ID, autoReplyPayload, { publicKey: PUBLIC_KEY })
     ])
 
     submitStatus.value = {
