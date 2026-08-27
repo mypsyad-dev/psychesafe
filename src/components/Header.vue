@@ -5,7 +5,8 @@
   >
     <div class="container-wide flex items-center justify-between">
       <!-- Logo -->
-      <RouterLink to="/" class="text-2xl font-display font-bold gradient-text">
+      <RouterLink to="/" class="flex items-center gap-2 text-2xl font-display font-bold gradient-text">
+        <img src="@/assets/logo.jpg" alt="Psyche Safe logo" class="h-8 w-8 rounded-lg" />
         Psyche Safe
       </RouterLink>
 

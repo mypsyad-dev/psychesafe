@@ -2,7 +2,8 @@
   <footer class="border-t border-border">
     <div class="container-wide py-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
       <div class="flex items-center gap-4 text-center md:text-left">
-        <RouterLink to="/" class="text-xl font-display font-bold gradient-text">
+        <RouterLink to="/" class="flex items-center gap-2 text-xl font-display font-bold gradient-text">
+          <img src="@/assets/logo.jpg" alt="Psyche Safe logo" class="h-7 w-7 rounded-lg" />
           Psyche Safe
         </RouterLink>
         <p class="text-sm text-muted-foreground">
